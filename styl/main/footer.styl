@@ -1,0 +1,197 @@
+footer
+	padding 0 0 15px
+.footer_line
+	border-top: 4px solid #32018b
+	margin-bottom: 15px
+.reqs
+	font-size: 17px
+.soc_buttons
+	width 100%
+	max-width 230px
+	margin 0 auto
+.soc_button
+	display: inline-block
+	width 38px
+	height 38px
+	margin-right: 5px
+	background-image url(../img/soc_icons.png)
+	background-repeat: no-repeat
+	position relative
+	transition: all .1s ease-in-out
+	&:last-child
+		margin-right: 0
+	&:hover
+		opacity .9
+		transform: translatey(-3px)
+.soc_button_vk
+	background-position: 
+	-43px center
+.soc_button_yt
+	background-position: 
+	-86px center
+.soc_button_insta
+	background-position: 
+	-129px center
+.modal-backdrop.in
+	opacity .9
+.mail_modal-content
+	background-color: rgb(30,19,81)
+.modal_mail_section_title
+	font-size: 24px
+	width 88%
+	margin 0 auto 20px
+	text-align: center
+	span
+		display: inline-block
+		font-family: 'AvenirNextCyrBold', sans-serif
+button.close
+	position absolute
+	width: 35px
+	height 35px
+	border-radius: 50px
+	line-height: 30px
+	text-align: center
+	font-size: 24px
+	color: #000
+	background-color: #F0F0F0
+	top 10px
+	right 10px
+	left auto
+	z-index 99
+	opacity 1
+	transition: all .1s ease-in-out
+	font-family: 'AvenirNextCyrBold', sans-serif
+	&:hover
+		color: #F0F0F0
+		background-color: #000
+.email
+	background-color: #fff
+	text-indent: 20px
+	border-radius: 25px;
+	height: 47px;
+	line-height: 45px;
+	float left
+	width 55%
+	border 1px solid #fff
+	color rgba(29, 28, 24, 0.702);
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(29, 28, 24, 0.702);
+		background: #ffff;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+.button_mail
+	float: right
+	width: 45%
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+}
+.checking {
+	display: table;
+	width 100%
+	max-width 500px
+	margin: 10px auto 0;
+	text-align: left
+}
+
+.checking .check_label {
+	color: #fff
+	line-height: 20px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 25px;
+	text-align: left;
+	font-size: 14px
+}
+
+.checking .check_label a {
+	color: #fff
+	border-bottom: 1px dashed
+	display: inline
+	text-decoration: none
+}
+
+.checking .check_label:before {
+	content: '';
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border none
+	border-radius: 3px
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	left: 7px;
+	top: -10px;
+	width: 7px;
+	height: 11px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #fff
+	border-right: 3px solid #fff
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check_label:before {
+	background-color: rgb(0,86,194)
+
+}
+
+.check:checked + .check_label:after {
+	opacity: 1;
+	top: 4px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.politics_modal-content
+	background-color #fff
+	background-image none
+	.modal-title
+		font-size: 24px
+		text-align: left 
+		width 100%
+		max-width 90%
+		font-family: 'AvenirNextCyrBold', sans-serif
+		color #000
+		small
+			display: block
+	p
+		font-size: 16px
+		margin-bottom: 15px
+		text-align: left
+		color #000
+		&:last-child
+			margin-bottom: 0

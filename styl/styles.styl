@@ -1,8 +1,45 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('../fonts/AvenirNextCyr.eot');
+	src: url('../fonts/AvenirNextCyr.eot') format('embedded-opentype'),
+		 url('../fonts/AvenirNextCyr.woff2') format('woff2'),
+		 url('../fonts/AvenirNextCyr.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr.ttf') format('truetype'),
+		 url('../fonts/AvenirNextCyr.svg#AvenirNextCyr') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyrBold';
+	src: url('../fonts/AvenirNextCyrBold.eot');
+	src: url('../fonts/AvenirNextCyrBold.eot') format('embedded-opentype'),
+		 url('../fonts/AvenirNextCyrBold.woff2') format('woff2'),
+		 url('../fonts/AvenirNextCyrBold.woff') format('woff'),
+		 url('../fonts/AvenirNextCyrBold.ttf') format('truetype'),
+		 url('../fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+
+
 *
 	margin 0
 	padding 0
 	outline none
-
+body
+	font-family: 'AvenirNextCyr', sans-serif
+	font-size: 18px
+	color: #fff
+	background-color: rgb(30,19,81)
+	background-image url(../img/main_bg.jpg)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
 a
 	color: #fefefe
 	&:focus
@@ -51,3 +88,35 @@ footer
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	display block
+	width 100%
+	max-width: 230px;
+	height: 47px;
+	line-height: 47px;
+	background-color: rgb(229, 0, 252);
+	box-shadow: 0px 3px 7.44px 0.56px rgba(0, 0, 0, 0.35);
+	text-align: center
+	text-decoration: none
+	border-radius: 25px
+	margin 0
+	transition: all .8s ease-out
+	&:focus
+		text-decoration: none
+		color rgb(255,255,255)
+	&:hover
+		text-decoration: none
+		color rgb(255,255,255)
+		box-shadow: 0px 3px 7.44px 0.56px rgba(0, 0, 0, 0.35), 0 0 0 50px rgb(198,0,216) inset
+.general_title
+	font-size: 29px;
+	font-family: 'AvenirNextCyrBold', sans-serif
+	line-height: 1.345;
+	margin-bottom: 15px
+p
+li
+	line-height: 28px
+
+@import 'main/main'
+@import 'main/footer'
+@import 'main/medias'

@@ -1,8 +1,8 @@
--var head_url = '';
--var head_title = '';
--var head_description = '';
+-var head_url = 'https://journal.mastervision.su/';
+-var head_title = '«Электронный журнал MasterVision»';
+-var head_description = 'Журнал посвящен темам психологии, астрологии, эзотерики, самопознанию, магии';
 -var head_img = 'img/banner.jpg';
--var styles = '';
+-var styles = 'css/styles.css';
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -11,10 +11,11 @@ html(lang="ru")
 		include pug/scripts/head_scripts
 	body
 		include pug/scripts/body_top_scripts
+		include pug/main/main
+		include pug/main/footer
 		include pug/scripts
 		<!--BEGIN JIVOSITE CODE-->
 		//script
 			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
 		<!--END JIVOSITE CODE-->
 		include pug/scripts/body_bottom_scripts
-		//iframe(name="results" style="display:none;")
