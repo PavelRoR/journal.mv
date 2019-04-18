@@ -193,21 +193,7 @@ section#main
 					//- 	.clearfix
 					//- </nav>
 		.row
-			.col-md-6.col-sm-6
-				.col-md-6.col-md-push-6.col-sm-12
-					h3.general_title Авторы статей:
-					ul.main_list.main_ul_list
-						li Жанна Абрамова
-						li Василий Попов
-						li Анна Ролева
-						li Вероника Юрина
-						li Ольга Кононенко
-						li Ольга Веда и другие психологи, парапсихологи, эзотерики
-						li А также консультанты/эксперты на нашей платформе Master Vision
-				.col-md-6.col-md-pull-6.col-sm-12
-					h3.general_title.general_title_archive Архив номеров:
-					button.button(data-toggle="modal" data-target="#archive") Скачать бесплатно
-			.col-md-6.col-sm-6
+			.col-md-6.col-md-push-6.col-sm-6
 				.col-md-6.col-sm-12.sub_cols
 					h3.general_title.general_title_rubrics Рубрики:
 					ol.main_list.main_ol_list
@@ -226,5 +212,37 @@ section#main
 						li Эзотерика для профессионалов 
 						li Эзотерика для начинающих
 				.col-md-6.col-sm-12.sub_cols
-					h3.general_title.general_title_fresh Свежий номер
-					button.button.button_fresh(data-toggle="modal" data-target="#fresh") Подписаться бесплатно
+					h3.general_title.general_title_fresh Получить свежий номер за Апрель
+					//- button.button.button_fresh(data-toggle="modal" data-target="#fresh") Подписаться бесплатно
+					form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").form.fresh_form
+						h4.fresh_form_title Введите email, и мы отправим на него 
+							span свежий номер
+						.email-block
+							input( type="hidden" value="1" name="required_fields[email]")
+							input(class="email fresh_mail" name="Contact[email]" type="text" placeholder="Ваш email")
+						button(type="submit").button.button_mail.button_fresh Получить номер
+						.clearfix
+						p.alert_message 
+						<!--Обязательный параметр. Не удалять и не изменять!-->
+						input(type="hidden" value="660" name="Contact[id_newsletter]")
+						<!--API код канала рекламы-->
+						input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")
+						.checking.checking_modal
+							input(type="checkbox" id="check_f" checked).check
+							label(for="check_f").check_label Я согласен с 
+								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
+								|  по 152 - Ф3
+			.col-md-6.col-md-pull-6.col-sm-6
+				.col-md-6.col-md-push-6.col-sm-12
+					h3.general_title.general_title_authors Авторы статей:
+					ul.main_list.main_ul_list
+						li Жанна Абрамова
+						li Василий Попов
+						li Анна Ролева
+						li Вероника Юрина
+						li Ольга Кононенко
+						li Ольга Веда и другие психологи, парапсихологи, эзотерики
+						li А также консультанты/эксперты на нашей платформе Master Vision
+				.col-md-6.col-md-pull-6.col-sm-12
+					h3.general_title.general_title_archive Архив номеров:
+					button.button(data-toggle="modal" data-target="#archive") Скачать бесплатно

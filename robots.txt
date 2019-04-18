@@ -1,0 +1,6 @@
+Disallow: /magazine_enter/
+
+Host: journal.mastervision.su
+# DL Robots.txt
+
+Disallow: /magazine_enter/
